@@ -251,8 +251,8 @@ button {
   background-size: cover;
   position: relative;
   width: 100%;
-  height: 100vh;
-  min-height: 100vh;
+  height: 700px;
+  min-height: 700px;
   overflow: hidden;
   margin-top: 9.2vw;
   display: flex;
@@ -260,6 +260,10 @@ button {
   justify-content: center;
   align-items: center;
   padding-bottom: 20px; }
+  @media only screen and (min-width: 1200px) {
+    .new-products {
+      height: 100vh;
+      min-height: 100vh; } }
   .new-products__title {
     color: #fff;
     margin-top: 7vw; }
