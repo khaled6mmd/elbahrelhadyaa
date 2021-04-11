@@ -134,7 +134,7 @@ a {
 
 /* handling mobile menu */
 .main-header__main-nav ul.active {
-  height: 200px;
+  height: 220px;
   z-index: 20; }
 
 .main-header__menu-icons img {
