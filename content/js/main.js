@@ -17,6 +17,9 @@ $('.main-header__carousel-head').owlCarousel({
     navText: ["<i class='fas fa-chevron-circle-right'></i>", "<i class='fas fa-chevron-circle-left'></i>"],
     rtl: true,
     dots: false,
+    autoplay: true,
+    autoplayTimeout: 3500,
+    autoplayHoverPause: true,
     responsive: {
         0: {
             items: 1
@@ -24,19 +27,7 @@ $('.main-header__carousel-head').owlCarousel({
     }
 })
 
-// if (window.matchMedia('(max-width: 768px)').matches) {
-//     $('.new-products__carousel').owlCarousel({
-//         loop: true,
-//         nav: false,
-//         rtl: true,
-//         dots: true,
-//         responsive: {
-//             0: {
-//                 items: 3
-//             }
-//         }
-//     })
-// }
+
 
 
 $(function () {
@@ -48,6 +39,9 @@ $(function () {
             dots: true,
             margin: 10,
             center: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
             responsive: {
                 0: {
                     items: 3
