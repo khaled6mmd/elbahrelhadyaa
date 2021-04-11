@@ -6,6 +6,7 @@
 
     &__title {
         color: $text-primary;
+        margin-bottom: 5.84vw;
     }
 
     &__image {
@@ -79,6 +80,7 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+        margin-top: 25px;
 
         @media only screen and (min-width: 576px) {
             min-width: 200%;
@@ -94,6 +96,14 @@
             .new-products__carousel {
                 display: flex;
             }
+        }
+
+        @media only screen and (min-width: 1200px) {
+            margin-top: 50px;
+        }
+
+        @media only screen and (min-width:1300px) {
+            margin-top: 70px;
         }
     }
 

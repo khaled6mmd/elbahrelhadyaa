@@ -12,8 +12,7 @@ body {
   height: 94px;
   font-size: 37px;
   font-weight: bold;
-  line-height: 1.34;
-  margin-bottom: 5.84vw; }
+  line-height: 1.34; }
   @media only screen and (min-width: 992px) {
     .section-title {
       font-size: 3.6vw; } }
@@ -225,7 +224,8 @@ button {
   margin-top: 5.5vw;
   width: 100%; }
   .about-us__title {
-    color: #191414; }
+    color: #191414;
+    margin-bottom: 5.84vw; }
   .about-us__image {
     height: 100%;
     object-fit: contain;
@@ -276,7 +276,8 @@ button {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    margin-top: 25px; }
     @media only screen and (min-width: 576px) {
       .new-products__cards-container {
         min-width: 200%; } }
@@ -289,6 +290,12 @@ button {
         transform: unset; }
         .new-products__cards-container .new-products__carousel {
           display: flex; } }
+    @media only screen and (min-width: 1200px) {
+      .new-products__cards-container {
+        margin-top: 50px; } }
+    @media only screen and (min-width: 1300px) {
+      .new-products__cards-container {
+        margin-top: 70px; } }
   .new-products__card-wraper {
     display: flex;
     align-items: center;
