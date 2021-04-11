@@ -47,6 +47,7 @@ $(function () {
             rtl: true,
             dots: true,
             margin: 10,
+            center: true,
             responsive: {
                 0: {
                     items: 3

@@ -90,7 +90,6 @@
 
     &__cards-container {
         min-width: 210%;
-        margin-top: 20px;
         position: absolute;
         left: 50%;
         top: 50%;
@@ -98,7 +97,6 @@
 
         @media only screen and (min-width: 576px) {
             min-width: 200%;
-            margin-top: 25px;
         }
 
         @media only screen and (min-width: 768px) {
@@ -230,10 +228,20 @@
     &__btn {
         padding: 10px 20px 10px 20px;
         font-size: 18px;
+        margin-bottom: 20px;
 
         @media only screen and (min-width: 576px) {
             padding: 14px 40px 14px 39px;
             margin-bottom: 20px;
-font-size: 22px;        }
+            font-size: 22px;
+        }
+    }
+
+    .owl-item {
+        opacity: 0.6;
+    }
+
+    .owl-item.center {
+        opacity: 1;
     }
 }
