@@ -229,8 +229,10 @@ button {
   .about-us__image {
     height: 100%;
     object-fit: contain;
-    box-shadow: 0 10px 20px 0 #c5c9cb;
     padding: 0; }
+    @media only screen and (min-width: 768px) {
+      .about-us__image {
+        box-shadow: 0 10px 20px 0 #c5c9cb; } }
   .about-us__text {
     line-height: 1.67;
     font-size: 18px;
@@ -260,14 +262,17 @@ button {
   padding-bottom: 20px; }
   .new-products__title {
     color: #fff;
-    margin-top: 5.9vw; }
+    margin-top: 7vw; }
+    @media only screen and (min-width: 768px) {
+      .new-products__title {
+        margin-top: 5.9vw; } }
   .new-products__cards-container {
     min-width: 240%;
     margin-top: 20px;
     position: absolute;
     left: 50%;
-    top: 22vw;
-    transform: translateX(-50%); }
+    top: 50%;
+    transform: translate(-50%, -50%); }
     @media only screen and (min-width: 576px) {
       .new-products__cards-container {
         min-width: 200%; } }
@@ -288,7 +293,6 @@ button {
   .new-products__card {
     flex-shrink: 0;
     width: 90%;
-    box-shadow: 10px 20px 50px 0px rgba(70, 137, 215, 0.2);
     border-radius: 10px;
     margin: 15px 0;
     position: relative;
