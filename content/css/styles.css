@@ -48,11 +48,14 @@ a {
 
 .footer__wraper {
   width: 100%;
+  height: 79px;
   background-color: #c4398c; }
 .footer__link {
-  font-family: 'Muli', sans-serif;
-  font-size: 12px;
-  color: #fff; }
+  font-size: 14px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
   .footer__link:last-child {
     margin-right: 0; }
   @media only screen and (min-width: 576px) {
@@ -88,14 +91,12 @@ a {
 /* Header */
 /* upper nav */
 .main-header__nav {
-  height: 17vh;
-  min-height: 17vh;
   position: relative; }
 
 .main-header__uper-nav {
   width: 100%;
-  height: 32%;
-  min-height: 32%;
+  height: 5.44vh;
+  min-height: 5.44vh;
   background-color: #c4398c; }
   .main-header__uper-nav-link {
     font-family: 'Muli', sans-serif;
@@ -136,8 +137,8 @@ a {
 
 /* main nav */
 .main-header__main-nav {
-  height: 68%;
-  min-height: 68%;
+  height: 11.56vh;
+  min-height: 11.56vh;
   position: relative; }
   .main-header__main-nav-list {
     height: 0;
@@ -374,7 +375,7 @@ button {
     width: 100%; }
   .new-products__card {
     flex-shrink: 0;
-    width: 85%;
+    width: 90%;
     border-radius: 10px;
     margin: 15px 0;
     position: relative;
@@ -412,7 +413,8 @@ button {
     .new-products__card-detailes {
       padding: 5px 18px 10px;
       display: flex;
-      justify-content: space-between; }
+      justify-content: space-between;
+      align-items: flex-end; }
       @media only screen and (min-width: 768px) {
         .new-products__card-detailes {
           flex-direction: column-reverse;
@@ -424,14 +426,14 @@ button {
       .new-products__card-detailes-btn {
         font-size: 12px;
         width: 50%;
-        padding: 10px 15px; }
+        padding: 10px 5px; }
         @media only screen and (min-width: 768px) {
           .new-products__card-detailes-btn {
             font-size: 15px;
             width: unset;
             padding: 10px 25px; } }
       .new-products__card-detailes-price {
-        font-size: 15px;
+        font-size: 18px;
         font-weight: 600;
         color: #c4398c; }
         @media only screen and (min-width: 576px) {

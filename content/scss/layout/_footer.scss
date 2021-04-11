@@ -3,14 +3,17 @@
 
     &__wraper {
         width: 100%;
+        height: 79px;
         background-color: $main-color;
 
     }
 
     &__link {
-        font-family: 'Muli', sans-serif;
-        font-size: 12px;
+        font-size: 14px;
         color: $text-secondary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         &:last-child {
             margin-right: 0;
