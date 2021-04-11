@@ -27,8 +27,15 @@
     }
 
     .contact-us__btn {
-        padding: 14px 53px 14px 49px;
         filter: blur(0.10px);
+        padding: 10px 20px 10px 20px;
+        font-size: 18px;
+        display: block;
+
+        @media only screen and (min-width: 768px) {
+            padding: 14px 53px 14px 49px;
+            font-size: 22px;
+        }
     }
 
     .map {

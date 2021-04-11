@@ -32,8 +32,13 @@
     }
 
     &__btn {
-        padding: 16px 49px 12px 50px;
+        padding: 10px 20px 10px 20px;
         display: block;
+        font-size: 18px;
+
+        @media only screen and (min-width: 768px) {
+            padding: 16px 49px 12px 50px;
+        }
     }
 }
 
@@ -223,12 +228,12 @@
     }
 
     &__btn {
-        padding: 11px 40px 11px 39px;
+        padding: 10px 20px 10px 20px;
+        font-size: 18px;
 
         @media only screen and (min-width: 576px) {
             padding: 14px 40px 14px 39px;
             margin-bottom: 20px;
-
-        }
+font-size: 22px;        }
     }
 }
