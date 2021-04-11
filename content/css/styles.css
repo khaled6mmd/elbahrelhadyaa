@@ -22,7 +22,7 @@ body {
     width: 40%;
     height: 37px;
     margin: 0 auto;
-    background: transparent url("./content/assets/images/title.png") center no-repeat;
+    background: transparent url("../../content/assets/images/title.png") center no-repeat;
     background-size: contain;
     margin-top: 1.3vw; }
     @media only screen and (min-width: 768px) {
@@ -46,9 +46,48 @@ a {
     a {
       font-size: 21px; } }
 
+.footer__wraper {
+  width: 100%;
+  background-color: #c4398c; }
+.footer__link {
+  font-family: 'Muli', sans-serif;
+  font-size: 12px;
+  color: #fff; }
+  .footer__link:last-child {
+    margin-right: 0; }
+  @media only screen and (min-width: 576px) {
+    .footer__link {
+      font-size: 14px; }
+      .footer__link:last-child {
+        margin-right: 12px; } }
+  @media only screen and (min-width: 768px) {
+    .footer__link:last-child {
+      margin-right: 52px; } }
+.footer__icon {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: #fff;
+  margin-right: 7.5px;
+  flex-shrink: 0;
+  font-size: 13px;
+  width: 25px;
+  height: 25px; }
+  @media only screen and (min-width: 768px) {
+    .footer__icon {
+      font-size: 16px;
+      width: 31px;
+      height: 31px; } }
+.footer__media span:first-child {
+  margin-right: 0; }
+
 /* Header */
 /* upper nav */
-.main-header nav {
+.main-header__nav {
   height: 17vh;
   min-height: 17vh;
   position: relative; }
@@ -58,21 +97,21 @@ a {
   height: 32%;
   min-height: 32%;
   background-color: #c4398c; }
-  .main-header__uper-nav a {
+  .main-header__uper-nav-link {
     font-family: 'Muli', sans-serif;
     font-size: 12px;
     color: #fff; }
-    .main-header__uper-nav a:last-child {
+    .main-header__uper-nav-link:last-child {
       margin-right: 0; }
   @media only screen and (min-width: 576px) {
-    .main-header__uper-nav a {
+    .main-header__uper-nav-link {
       font-size: 14px; }
-    .main-header__uper-nav a:last-child {
+    .main-header__uper-nav-link:last-child {
       margin-right: 12px; } }
   @media only screen and (min-width: 768px) {
-    .main-header__uper-nav a:last-child {
+    .main-header__uper-nav-link:last-child {
       margin-right: 52px; } }
-  .main-header__uper-nav span {
+  .main-header__uper-nav-icon {
     border: 1px solid #fff;
     border-radius: 50%;
     text-align: center;
@@ -87,10 +126,10 @@ a {
     width: 25px;
     height: 25px; }
     @media only screen and (min-width: 768px) {
-      .main-header__uper-nav span {
-        font-size: 16px;
-        width: 31px;
-        height: 31px; } }
+      .main-header__uper-nav-icon {
+        font-size: 15px;
+        width: 29px;
+        height: 29px; } }
 
 .main-header__media span:first-child {
   margin-right: 0; }
@@ -100,7 +139,7 @@ a {
   height: 68%;
   min-height: 68%;
   position: relative; }
-  .main-header__main-nav ul {
+  .main-header__main-nav-list {
     height: 0;
     overflow: hidden;
     transition: all 0.3s;
@@ -112,16 +151,16 @@ a {
     left: 0;
     padding-right: 50px; }
     @media only screen and (min-width: 768px) {
-      .main-header__main-nav ul {
+      .main-header__main-nav-list {
         position: relative;
         top: unset;
         left: unset;
         height: 100%;
         overflow: visible;
         padding-right: 0; } }
-    .main-header__main-nav ul li {
-      flex-shrink: 0;
-      line-height: 1.83; }
+  .main-header__main-nav-item {
+    flex-shrink: 0;
+    line-height: 1.83; }
 
 .main-header__main-logo {
   position: relative;
@@ -141,6 +180,30 @@ a {
   height: 25%;
   object-fit: contain;
   position: absolute; }
+
+.contact-us {
+  padding-bottom: 123px; }
+  .contact-us__title {
+    font-size: 31px;
+    color: #c4398c;
+    margin-bottom: 44px;
+    margin-top: 62px; }
+  .contact-us__input, .contact-us__text-area {
+    background-color: #fff;
+    border: solid 1px #979797;
+    -webkit-filter: blur(10px);
+    filter: blur(0.1px); }
+  .contact-us__input {
+    height: 60px; }
+  .contact-us textarea {
+    min-height: 188px;
+    max-width: 100%; }
+  .contact-us .contact-us__btn {
+    padding: 14px 53px 14px 49px;
+    filter: blur(0.1px); }
+  .contact-us .map {
+    overflow: hidden;
+    border-radius: 4px; }
 
 button {
   border: none;
@@ -251,8 +314,8 @@ button {
   background-size: cover;
   position: relative;
   width: 100%;
-  height: 700px;
-  min-height: 700px;
+  height: 650px;
+  min-height: 650px;
   overflow: hidden;
   margin-top: 9.2vw;
   display: flex;
@@ -260,10 +323,18 @@ button {
   justify-content: center;
   align-items: center;
   padding-bottom: 20px; }
+  @media only screen and (min-width: 576px) {
+    .new-products {
+      height: 700px; } }
+  @media only screen and (min-width: 768px) {
+    .new-products {
+      height: 750px; } }
   @media only screen and (min-width: 1200px) {
     .new-products {
-      height: 100vh;
-      min-height: 100vh; } }
+      height: 850px; } }
+  @media only screen and (min-width: 1400px) {
+    .new-products {
+      height: 900px; } }
   .new-products__title {
     color: #fff;
     margin-top: 7vw; }
@@ -271,13 +342,12 @@ button {
       .new-products__title {
         margin-top: 5.9vw; } }
   .new-products__cards-container {
-    min-width: 240%;
+    min-width: 210%;
     margin-top: 20px;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 0; }
+    transform: translate(-50%, -50%); }
     @media only screen and (min-width: 576px) {
       .new-products__cards-container {
         min-width: 200%;
@@ -304,11 +374,17 @@ button {
     width: 100%; }
   .new-products__card {
     flex-shrink: 0;
-    width: 90%;
+    width: 85%;
     border-radius: 10px;
     margin: 15px 0;
     position: relative;
     background-color: #fff; }
+    @media only screen and (min-width: 576px) {
+      .new-products__card {
+        width: 70%; } }
+    @media only screen and (min-width: 768px) {
+      .new-products__card {
+        width: 90%; } }
     @media only screen and (min-width: 1200px) {
       .new-products__card {
         width: 86.5%; } }
@@ -368,6 +444,10 @@ button {
           .new-products__card-detailes-price {
             padding-bottom: 0; } }
   .new-products__btn {
-    padding: 14px 40px 14px 39px; }
+    padding: 11px 40px 11px 39px; }
+    @media only screen and (min-width: 576px) {
+      .new-products__btn {
+        padding: 14px 40px 14px 39px;
+        margin-bottom: 20px; } }
 
 /*# sourceMappingURL=styles.css.map */

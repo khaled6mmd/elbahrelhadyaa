@@ -1,0 +1,38 @@
+// Footer
+.contact-us {
+    padding-bottom: 123px;
+
+    &__title {
+        font-size: 31px;
+        color: $main-color;
+        margin-bottom: 44px;
+        margin-top: 62px;
+    }
+
+    &__input,
+    &__text-area {
+        background-color: #fff;
+        border: solid 1px #979797;
+        -webkit-filter: blur(10px);
+        filter: blur(0.10px);
+    }
+
+    &__input {
+        height: 60px;
+    }
+
+    textarea {
+        min-height: 188px;
+        max-width: 100%;
+    }
+
+    .contact-us__btn {
+        padding: 14px 53px 14px 49px;
+        filter: blur(0.10px);
+    }
+
+    .map {
+        overflow: hidden;
+        border-radius: 4px;
+    }
+}

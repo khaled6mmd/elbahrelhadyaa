@@ -22,21 +22,21 @@
                 <div class="container h-100">
                     <div class=" row main-header__media flex-md-row justify-content-md-between h-100">
                         <div
-                            class="text-center d-flex flex-column flex-sm-row pt-1 pt-md-0 align-items-center h-100 text-md-end mx-auto mx-md-0 col-6 col-sm-8 col-md-7 ">
-                            <a href="#">example@yourmail.com</a>
-                            <a href="#">phone: 01124244939</a>
+                            class="text-center d-flex flex-column flex-sm-row align-items-center h-100 text-md-end mx-auto my-auto mx-md-0 col-6 col-sm-8 col-md-7">
+                            <a class="main-header__uper-nav-link" href="#">example@yourmail.com</a>
+                            <a class="main-header__uper-nav-link" href="#">phone: 01124244939</a>
                         </div>
                         <div class="d-flex align-items-center text-center mx-auto mx-md-0 w-auto my-md-1">
-                            <span class="test mr-0">
+                            <span class="main-header__uper-nav-icon mr-0">
                                 <i class="fab fa-facebook-f"></i>
                             </span>
-                            <span class="test">
+                            <span class="main-header__uper-nav-icon">
                                 <i class="fab fa-twitter"></i>
                             </span>
-                            <span class="test">
+                            <span class="main-header__uper-nav-icon">
                                 <i class="fab fa-instagram"></i>
                             </span>
-                            <span class="test">
+                            <span class="main-header__uper-nav-icon">
                                 <i class="fab fa-youtube"></i>
                             </span>
                         </div>
@@ -57,11 +57,13 @@
                         </div>
 
                         <ul
-                            class="mobile-menu d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between text-center col-md-7 col-lg-5 ">
-                            <li><a class="py-2 py-0" href="#">الرئيسية</a></li>
-                            <li><a class="py-2 py-0" href="#">من نحن</a></li>
-                            <li><a class="py-2 py-0" href="#">الأنواع والأصناف</a></li>
-                            <li><a class="py-2 pb-3 pb-md-2 py-0" href="#">اتصل بنا</a></li>
+                            class="mobile-menu main-header__main-nav-list d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between text-center col-md-7 col-lg-5 ">
+                            <li class="main-header__main-nav-item"><a class="py-2 py-0" href="#">الرئيسية</a></li>
+                            <li class="main-header__main-nav-item"><a class=" py-2 py-0" href="#">من نحن</a></li>
+                            <li class="main-header__main-nav-item"><a class=" py-2 py-0" href="#">الأنواع والأصناف</a>
+                            </li>
+                            <li class="main-header__main-nav-item><a class=" py-2 pb-3 pb-md-2 py-0" href="#">اتصل
+                                بنا</a></li>
                         </ul>
                     </div>
                 </div>
@@ -193,12 +195,76 @@
 
     </section>
 
+    <section class="contact-us">
+        <h1 class="contact-us__title section-title text-center">
+            تواصل معنا
+        </h1>
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-7">
+                    <form action="/" class="mb-4 mb-lg-0 h-100">
+                        <div class="row">
+                            <div class="form-group col-md-6 ">
+                                <input type="text" name="name" class="form-control contact-us__input" id="name" required
+                                    placeholder="الاسم باكامل" />
+                            </div>
+                            <div class="form-group col-md-6 mt-4 mt-md-0">
+                                <input type="email" class="form-control contact-us__input" name="email" id="email"
+                                    required placeholder="البريد الاليكتروني" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control mt-4 contact-us__text-area" name="message" required
+                                placeholder="اترك رسالتك هنا"></textarea>
+                        </div>
+                        <button type="submit" class="contact-us__btn mt-4">ارسل الان</button>
+                    </form>
+                </div>
+                <div class="col-lg-4">
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571289.733943155!2d76.08560099999998!3d29.058775699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390e4a4b98404f57%3A0x75ffae70833e8448!2sShahbad%2C%20Haryana%20136135!5e0!3m2!1sen!2sin!4v1594195370933!5m2!1sen!2sin"
+                            width="100%" height="350" frameborder="0" style="border: 0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__wraper">
+            <div class="container h-100">
+                <div class=" row footer__media flex-md-row justify-content-md-between h-100">
+                    <div
+                        class="text-center text-white d-flex flex-column flex-sm-row pt-1 pt-md-0 align-items-center h-100 text-md-end mx-auto my-auto mx-md-0 col-6 col-sm-8 col-md-7 ">
+                        جميع الحقوق محفوظة 2021
+                    </div>
+                    <div class="d-flex align-items-center text-center mx-auto mx-md-0 w-auto my-md-1">
+                        <span class="footer__icon mr-0">
+                            <i class="fab fa-facebook-f"></i>
+                        </span>
+                        <span class="footer__icon">
+                            <i class="fab fa-twitter"></i>
+                        </span>
+                        <span class="footer__icon">
+                            <i class="fab fa-instagram"></i>
+                        </span>
+                        <span class="footer__icon">
+                            <i class="fab fa-youtube"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="./content/js/vendor/jquery-3.6.0.min.js"></script>
     <script src="./content/js/vendor/all.min.js"></script>
     <script src="./content/js/vendor/bootstrap.bundle.min.js"></script>
     <script src="./content/js/vendor/owl.carousel.min.js"></script>
     <script src="./content/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.js"></script>
 </body>
 
 </html>
