@@ -22,7 +22,7 @@ body {
     width: 40%;
     height: 37px;
     margin: 0 auto;
-    background: transparent url("/content/assets/images/title.png") center no-repeat;
+    background: transparent url("./content/assets/images/title.png") center no-repeat;
     background-size: contain;
     margin-top: 1.3vw; }
     @media only screen and (min-width: 768px) {
