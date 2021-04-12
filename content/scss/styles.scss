@@ -1,5 +1,7 @@
 // Style Guide: https://github.com/georgeroubie/CSS-Style-Guide/blob/master/README.md
 // Style Lint: https://github.com/georgeroubie/CSS-Style-Guide/blob/master/.stylelintrc
+@import "./lang/direction-ltr";
+
 
 // utils
 @import './utils/variables';

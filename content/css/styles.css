@@ -1,3 +1,4 @@
+/*** RTL websites ***/
 @font-face {
   font-family: 'Cairo';
   src: url("../assets/fonts/Cairo-Regular.eot");
@@ -194,16 +195,13 @@ a {
     margin-top: 62px; }
   .contact-us__input, .contact-us__text-area {
     background-color: #fff;
-    border: solid 1px #979797;
-    -webkit-filter: blur(10px);
-    filter: blur(0.1px); }
+    border: solid 1px #979797; }
   .contact-us__input {
     height: 60px; }
   .contact-us textarea {
     min-height: 188px;
     max-width: 100%; }
   .contact-us .contact-us__btn {
-    filter: blur(0.1px);
     padding: 10px 20px 10px 20px;
     font-size: 18px;
     display: block; }
